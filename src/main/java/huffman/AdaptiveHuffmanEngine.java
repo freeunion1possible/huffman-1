@@ -11,7 +11,7 @@ import static huffman.FrequencyTable.EOF;
  * Adaptive huffman compression and decompression code.
  */
 public class AdaptiveHuffmanEngine {
-  public static final int CHUNK_SIZE = 1<<18; // 2^18 = 262144
+  public static final int CHUNK_SIZE = 1 << 18; // 2^18 = 262144
 
   public void compress(InputStream in, BitOutputStream out) throws IOException {
     FrequencyTable freqTable = new FrequencyTable();

@@ -10,7 +10,6 @@ public class Utils {
   public final static int MIN_SYMBOL_VALUE = 0;
   public final static int MAX_SYMBOL_VALUE = 256;
 
-
   public static int checkSymbolRange(int symbol) {
     return checkRange(symbol, MIN_SYMBOL_VALUE, MAX_SYMBOL_VALUE, "symbol");
   }

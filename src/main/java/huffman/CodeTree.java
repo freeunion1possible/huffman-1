@@ -14,7 +14,8 @@ import java.util.List;
 public class CodeTree {
   private final InternalNode root;
 
-  private List<List<Integer>> codes = new ArrayList<List<Integer>>();;
+  private List<List<Integer>> codes = new ArrayList<List<Integer>>();
+  ;
 
   public CodeTree(InternalNode root, int symbolLimit) {
     this.root = notNull(root, "root");

@@ -33,6 +33,7 @@ public class FrequencyTable {
 
   /**
    * Resets frequency of all symbols to the given value
+   *
    * @param value new frequency for all symbols
    */
   public void resetAllFrequencies(long value) {
@@ -63,7 +64,7 @@ public class FrequencyTable {
     }
 
     // construct the CodeTree with the remaining InternalNode
-    return new CodeTree((InternalNode)queue.remove(), SYMBOL_LIMIT);
+    return new CodeTree((InternalNode) queue.remove(), SYMBOL_LIMIT);
   }
 
 }

@@ -5,9 +5,9 @@ import java.util.List;
 
 /**
  * Abstract node of a huffman tree.
- *
+ * <p/>
  * Contains the lowest symbol in the tree and the frequency of the whole tree.
- *
+ * <p/>
  * Concrete Nodes are {@see InternalNode} and {@see Leaf}.
  */
 public abstract class Node implements Comparable<Node> {
@@ -21,7 +21,7 @@ public abstract class Node implements Comparable<Node> {
 
   /**
    * {@inheritDoc}
-   *
+   * <p/>
    * Compares nodes according to it's frequency.
    * If the nodes have the same frequency, then comparison is done by the lowest symbol in each node.
    */

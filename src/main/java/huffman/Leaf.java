@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * Leaf node of a Huffman tree.
- *
+ * <p/>
  * Contains the symbol and it's frequency.
  */
 public class Leaf extends Node {
@@ -21,7 +21,8 @@ public class Leaf extends Node {
   @Override
   public void buildCodeLengths(int[] codeLengths, int depth) {
     if (codeLengths[symbol] != 0)
-      throw new AssertionError("Symbol has more than one code");  // Because CodeTree has a checked constraint that disallows a symbol in multiple leaves
+      throw new AssertionError(
+          "Symbol has more than one code");  // Because CodeTree has a checked constraint that disallows a symbol in multiple leaves
     if (symbol >= codeLengths.length)
       throw new IllegalArgumentException("Symbol exceeds symbol limit");
     codeLengths[symbol] = depth;

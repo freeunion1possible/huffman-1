@@ -17,7 +17,7 @@ public class InternalNode extends Node {
 
   public InternalNode(Node leftChild, Node rightChild) {
     super(Math.min(notNull(leftChild, "leftChild").lowestSymbol, notNull(rightChild, "rightChild").lowestSymbol),
-                   notNull(leftChild, "leftChild").frequency + notNull(rightChild, "rightChild").frequency);
+          notNull(leftChild, "leftChild").frequency + notNull(rightChild, "rightChild").frequency);
     this.leftChild = leftChild;
     this.rightChild = rightChild;
   }

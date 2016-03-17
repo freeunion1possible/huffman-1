@@ -19,7 +19,7 @@ public class FrequencyTableTest {
 
   private int numberOfEncodedSymbols(CodeTree ct) {
     int codeWithLength = 0;
-    for (int l: ct.buildCodeLengths()) {
+    for (int l : ct.buildCodeLengths()) {
       if (l > 0) {
         codeWithLength++;
       }
